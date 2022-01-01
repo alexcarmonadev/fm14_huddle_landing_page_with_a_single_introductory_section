@@ -1,0 +1,234 @@
+:root {
+  /* ------------PRIMARY COLORS------------ */
+  --violet: hsl(257, 40%, 49%);
+  --magenta: hsl(300, 69%, 71%);
+  --white: hsl(0, 0%, 100%);
+
+  /* ------------FONTS------------ */
+  --font-body: 'Open Sans', sans-serif; /* 400 */
+  --font-headings: 'Poppins', sans-serif; /* 400, 600 */
+}
+
+* {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  position: relative;
+  margin-right: auto;
+  margin-left: auto;
+  padding: 2rem 2.28rem;
+  max-width: 1440px;
+  min-height: 100vh;
+  font-family: var(--font-headings);
+  font-size: 16px;
+  background-color: var(--violet);
+  background: var(--violet) url('../assets/images/bg-mobile.svg') top center
+    no-repeat;
+  background-size: calc(100% - 0%);
+}
+
+@media screen and (min-width: 768px) {
+  body {
+    padding: 3.4rem 4.6rem;
+    background: var(--violet) url('../assets/images/bg-desktop.svg') top left
+      no-repeat;
+  }
+}
+
+/* ------------HEADER------------ */
+.logo {
+  margin-bottom: 3.39rem;
+  width: 8.1rem;
+}
+
+@media screen and (min-width: 768px) {
+  .header {
+    margin-bottom: 1.55rem;
+  }
+
+  .logo {
+    width: 13.5rem;
+  }
+}
+
+/* ------------MAIN------------ */
+.main {
+  margin-bottom: 4.6rem;
+  text-align: center;
+}
+
+.main__img {
+  margin-bottom: 3.25rem;
+  width: 100%;
+  -o-object-fit: contain;
+  object-fit: contain;
+}
+
+.main__article-title {
+  margin-bottom: 1rem;
+  font-size: 1.49em;
+  text-transform: capitalize;
+  color: var(--white);
+}
+
+.main__article-text {
+  margin-bottom: 2rem;
+  font-family: var(--font-body);
+  line-height: 1.5;
+  color: var(--white);
+}
+
+.button {
+  padding: 0.75rem 4.6rem;
+  font-size: 0.75em;
+  text-decoration: none;
+  background-color: var(--white);
+  color: var(--violet);
+  border-radius: 1.25rem;
+  -webkit-box-shadow: 0 5px 5px rgba(0, 0, 0, 0.25);
+  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.25);
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+@media screen and (min-width: 768px) {
+  .main {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+    gap: 3.25rem;
+    text-align: left;
+  }
+
+  .main__img {
+    max-width: 54.9%;
+  }
+
+  .main__article {
+    margin-top: 2.65rem;
+  }
+
+  .main__article-title {
+    margin-bottom: 1.27rem;
+    max-width: 31.25rem;
+    font-size: 2.48em;
+  }
+
+  .main__article-text {
+    margin-bottom: 2.45rem;
+    max-width: 32rem;
+    font-size: 1.125em;
+  }
+
+  .button {
+    padding: 1rem 4rem;
+    font-size: 1.14em;
+    border-radius: 2.813rem;
+  }
+
+  .button:hover {
+    background-color: var(--magenta);
+    color: var(--white);
+  }
+}
+
+/* ------------FOOTER------------ */
+.social {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  gap: 0.6rem;
+  margin-bottom: 1.5rem;
+  list-style-type: none;
+  color: var(--white);
+}
+
+.social__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: 1.75rem;
+  height: 1.75rem;
+  border: 1px solid var(--white);
+  border-radius: 50%;
+}
+
+.social__link {
+  color: inherit;
+}
+
+.fab {
+  font-size: 0.8em;
+}
+
+.attribution {
+  font-size: 0.6em;
+  text-align: center;
+  color: var(--white);
+}
+
+.attribution a {
+  color: var(--magenta);
+}
+
+@media screen and (min-width: 768px) {
+  .footer {
+    margin-top: 12rem;
+    -webkit-transition: margin 0.3s linear;
+    -o-transition: margin 0.3s linear;
+    transition: margin 0.3s linear;
+  }
+
+  .social {
+    -webkit-box-pack: end;
+    -ms-flex-pack: end;
+    justify-content: flex-end;
+    gap: 1rem;
+    margin-top: -6.6rem;
+  }
+
+  .social__item {
+    width: 2.5rem;
+    height: 2.5rem;
+  }
+
+  .fab {
+    font-size: 1.1em;
+  }
+
+  .social__item:hover {
+    color: var(--magenta);
+    border: 1px solid var(--magenta);
+  }
+
+  .attribution {
+    margin-top: -1rem;
+  }
+}
+
+@media screen and (min-width: 1150px) {
+  .footer {
+    margin-top: 0;
+    -webkit-transition: margin 0.3s linear;
+    -o-transition: margin 0.3s linear;
+    transition: margin 0.3s linear;
+  }
+}
