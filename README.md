@@ -1,13 +1,13 @@
 # Frontend Mentor - Huddle landing page with a single introductory section solution
 
-:point_right: This is the [Huddle landing page with a single introductory section](aqui va el reto de frontendmentor) challenge on Frontend Mentor.
+:point_right: This is the [Huddle landing page with a single introductory section](https://www.frontendmentor.io/challenges/huddle-landing-page-with-a-single-introductory-section-B_2Wvxgi0) challenge on Frontend Mentor.
 
 ## Overview
 
 ### Links
 
-:heavy_check_mark: My `Solution` URL : [Frontend Mentor Solution](Aqui va tu solucion de frontendmentor) </br>
-:heavy_check_mark: My `Live` Site URL : [GitHub Pages](Aqui va tu solucion de github pages)
+:heavy_check_mark: My `Solution` URL : [Frontend Mentor Solution](https://www.frontendmentor.io/solutions/mobile-first-wn2-7-MVE) </br>
+:heavy_check_mark: My `Live` Site URL : [GitHub Pages](https://alexcarmonadev.github.io/fm14_huddle_landing_page_with_a_single_introductory_section/)
 
 Give a ⭐️ if you like this project!
 
